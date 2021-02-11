@@ -1,0 +1,14 @@
+a=int(input("Enter term where till we want to print series : "))
+print("The fibonacci series till term ",a," : ",end=" ")
+
+p=0
+q=1
+r=0
+print(p,end=" ")
+print(q,end=" ")
+
+for i in range(0,a-2):
+    r=p+q
+    print(r,end=" ")
+    p=q
+    q=r
